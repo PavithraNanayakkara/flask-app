@@ -59,7 +59,7 @@ patsy==0.5.1
 pickleshare==0.7.5
 pipenv==2020.8.13
 plac==0.9.6
-post==1.0.2
+
 preshed==2.0.1
 prometheus-client==0.7.1
 prompt-toolkit==2.0.9
