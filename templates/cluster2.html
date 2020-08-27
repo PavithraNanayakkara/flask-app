@@ -118,25 +118,45 @@ body {
     width: 100%;
   }
 }
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #800080;
+}
 </style>
 </head>
 <body>
 
 <div class="header">
-  <h1>Cluster2-Mathemactical and Logical</h1>
+  <h1>Mathemactical and Logical</h1>
   <p>I belong  to Logical-Mathematical Intelligence.</p>
 </div>
 
 <div class="navbar">
   <a href="cluster2.html" class="active">Home</a>
+  <a href="cluster2.html" class="active">Profile</a>
+  <a href="cluster2.html" class="active">Courses</a>
+  <a href="cluster2.html" class="active">About Us</a>
   
 </div>
 
 <div class="row">
   <div class="side">
-    <h2>About Me</h2>
-    
-    <div class="fakeimg" style="height:200px;"></div>
+    <section>
+		  <img class="mySlides" src="image-1.jpg"
+		  style="width:100%">
+		  <img class="mySlides" src="image-2.jpg"
+		  style="width:100%">
+		  <img class="mySlides" src="image-3.jpg"
+		  style="width:100%">
+		</section>
     
     
   </div>
@@ -145,7 +165,12 @@ body {
     <h4>When you hear the word intelligence, the concept of IQ testing may immediately come to mind. Intelligence is often defined as our intellectual potential; something we are born with, something that can be measured, and a capacity that is difficult to change.</h4>
     <div class="fakeimg" style="height:200px;">
 
-    	
+    	<h2>So Lets Learn Now!</h2>
+  
+    <a  href="exercise.asp?filename=exercise_link1" target="_blank">Lesson 1 »</a>
+    <a  href="exercise.asp?filename=exercise_link2" target="_blank">Lesson 2 »</a>
+    <a  href="exercise.asp?filename=exercise_link3" target="_blank">Lesson 3 »</a>
+    <a href="exercise.asp?filename=exercise_link4" target="_blank">Lesson 4 »</a>
 
     </div>
     <p>People who are strong in logical-mathematical intelligence are good at reasoning, recognizing patterns, and logically analyzing problems. These individuals tend to think conceptually about numbers, relationships, and patterns.</p>
@@ -165,7 +190,23 @@ body {
     </ul>
 </div>
 
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
 
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
 
 </body>
 </html>
